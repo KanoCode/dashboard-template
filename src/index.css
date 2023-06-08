@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* applying global styles*/
+
+  /* global buttons */
+  button {
+    @apply border px-2 text-black py-1  rounded-md;
+    background: #fabb18;
+  }
+
+  button:hover {
+    @apply text-black;
+    /* border: #fabb18; */
+  }
+
+  button:active {
+    @apply ring-2 ring-blue-400;
+  }
+
+  /* global header */
+  h1 {
+    @apply text-4xl font-medium;
+
+    font-style: normal;
+  }
+}
